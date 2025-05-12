@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_629400a757b5341b198f3abfb23070f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_629400a757b5341b198f3abfb23070f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_629400a757b5341b198f3abfb23070f9 = L.map(
+                "map_629400a757b5341b198f3abfb23070f9",
+                {
+                    center: [37.4691896, 126.9376976],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee3b81e3eb6aeb6485aa73b6980a5103 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ee3b81e3eb6aeb6485aa73b6980a5103.addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var marker_c74387859356ec7388247efcba22b711 = L.marker(
+                [37.4691896, 126.9376976],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var beautify_icon_5b30f82b4c404dd678c97758e6595262 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 1,
+}
+            )
+            marker_c74387859356ec7388247efcba22b711.setIcon(beautify_icon_5b30f82b4c404dd678c97758e6595262);
+        
+    
+        var popup_57e3f816398edae1963cf5d287cae9a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88d2c656a120884ec2c00ce07643cd8b = $(`<div id="html_88d2c656a120884ec2c00ce07643cd8b" style="width: 100.0%; height: 100.0%;">🏡 추천 위치 1 (총 거리 185m)</div>`)[0];
+                popup_57e3f816398edae1963cf5d287cae9a5.setContent(html_88d2c656a120884ec2c00ce07643cd8b);
+            
+        
+
+        marker_c74387859356ec7388247efcba22b711.bindPopup(popup_57e3f816398edae1963cf5d287cae9a5)
+        ;
+
+        
+    
+    
+                marker_c74387859356ec7388247efcba22b711.setIcon(beautify_icon_5b30f82b4c404dd678c97758e6595262);
+            
+    
+            var marker_8e67888e08a758b3303e8979f67b60c8 = L.marker(
+                [37.4691857431061, 126.937224862023],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_d9a83c21c40e2b9797a979cc24066526 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfa742728c8daa4c1b5d2c6c3ea5ceaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a696e6c7e9944d36d0c7367f72e109 = $(`<div id="html_41a696e6c7e9944d36d0c7367f72e109" style="width: 100.0%; height: 100.0%;">편의점: GS25 관악고시촌점 (42m)</div>`)[0];
+                popup_dfa742728c8daa4c1b5d2c6c3ea5ceaa.setContent(html_41a696e6c7e9944d36d0c7367f72e109);
+            
+        
+
+        marker_8e67888e08a758b3303e8979f67b60c8.bindPopup(popup_dfa742728c8daa4c1b5d2c6c3ea5ceaa)
+        ;
+
+        
+    
+    
+                marker_8e67888e08a758b3303e8979f67b60c8.setIcon(icon_d9a83c21c40e2b9797a979cc24066526);
+            
+    
+            var poly_line_67546445f96cdad6af18f739851a36ec = L.polyline(
+                [[37.4691896, 126.9376976], [37.4691857431061, 126.937224862023]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_67546445f96cdad6af18f739851a36ec.bindTooltip(
+                `<div>
+                     편의점까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e54844b55b2fedac7ff5b5126e4b3362 = L.marker(
+                [37.46914989550527, 126.93758889082282],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_c0286bc31efd2d27b66b1ced53f4aa0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d3735bddef33eedd269d69f885127bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffc64f50840505a91e334b39a49320d7 = $(`<div id="html_ffc64f50840505a91e334b39a49320d7" style="width: 100.0%; height: 100.0%;">약국: 강원약국 (11m)</div>`)[0];
+                popup_8d3735bddef33eedd269d69f885127bc.setContent(html_ffc64f50840505a91e334b39a49320d7);
+            
+        
+
+        marker_e54844b55b2fedac7ff5b5126e4b3362.bindPopup(popup_8d3735bddef33eedd269d69f885127bc)
+        ;
+
+        
+    
+    
+                marker_e54844b55b2fedac7ff5b5126e4b3362.setIcon(icon_c0286bc31efd2d27b66b1ced53f4aa0d);
+            
+    
+            var poly_line_e3cd51eed6b375db9b7d506d4365e2b2 = L.polyline(
+                [[37.4691896, 126.9376976], [37.46914989550527, 126.93758889082282]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_e3cd51eed6b375db9b7d506d4365e2b2.bindTooltip(
+                `<div>
+                     약국까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_952eda4740e1a65d72bc6a40ec400140 = L.marker(
+                [37.46931223282107, 126.93788379902266],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_dea6ce04a49a9cbc9e7b8d1233d0000f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d50284726792ecd7ee0459bb4711f9ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_068e35383ef6adb3c4ac12b17c946ebd = $(`<div id="html_068e35383ef6adb3c4ac12b17c946ebd" style="width: 100.0%; height: 100.0%;">병원: 예미담치과의원 (21m)</div>`)[0];
+                popup_d50284726792ecd7ee0459bb4711f9ce.setContent(html_068e35383ef6adb3c4ac12b17c946ebd);
+            
+        
+
+        marker_952eda4740e1a65d72bc6a40ec400140.bindPopup(popup_d50284726792ecd7ee0459bb4711f9ce)
+        ;
+
+        
+    
+    
+                marker_952eda4740e1a65d72bc6a40ec400140.setIcon(icon_dea6ce04a49a9cbc9e7b8d1233d0000f);
+            
+    
+            var poly_line_d68c067d18afe39e417f92bd74c22374 = L.polyline(
+                [[37.4691896, 126.9376976], [37.46931223282107, 126.93788379902266]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_d68c067d18afe39e417f92bd74c22374.bindTooltip(
+                `<div>
+                     병원까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55cb8ad45f95ab2ddd166495679f2a44 = L.marker(
+                [37.4693659379551, 126.937211146126],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_fc757bd94af23e5e22f190c5ddebac81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32ea1ef6060cb31350e11be9a7803ba6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93deadf055b8e3fbbbb20ca3d78f662b = $(`<div id="html_93deadf055b8e3fbbbb20ca3d78f662b" style="width: 100.0%; height: 100.0%;">코인빨래방: 화이트365 관악대학점 (47m)</div>`)[0];
+                popup_32ea1ef6060cb31350e11be9a7803ba6.setContent(html_93deadf055b8e3fbbbb20ca3d78f662b);
+            
+        
+
+        marker_55cb8ad45f95ab2ddd166495679f2a44.bindPopup(popup_32ea1ef6060cb31350e11be9a7803ba6)
+        ;
+
+        
+    
+    
+                marker_55cb8ad45f95ab2ddd166495679f2a44.setIcon(icon_fc757bd94af23e5e22f190c5ddebac81);
+            
+    
+            var poly_line_42e8bec4ddab20407d97418590c57541 = L.polyline(
+                [[37.4691896, 126.9376976], [37.4693659379551, 126.937211146126]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_42e8bec4ddab20407d97418590c57541.bindTooltip(
+                `<div>
+                     코인빨래방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_411614703b64c677081d78304cc41354 = L.marker(
+                [37.4691645270942, 126.937998094808],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_a889ed235588bea216de370cb5d43aa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bd14b33e1f2c153e2b857fc2ef60de5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41fcde978cba0ef8e2f34697d63ff620 = $(`<div id="html_41fcde978cba0ef8e2f34697d63ff620" style="width: 100.0%; height: 100.0%;">헬스장: 힙짐 (27m)</div>`)[0];
+                popup_0bd14b33e1f2c153e2b857fc2ef60de5.setContent(html_41fcde978cba0ef8e2f34697d63ff620);
+            
+        
+
+        marker_411614703b64c677081d78304cc41354.bindPopup(popup_0bd14b33e1f2c153e2b857fc2ef60de5)
+        ;
+
+        
+    
+    
+                marker_411614703b64c677081d78304cc41354.setIcon(icon_a889ed235588bea216de370cb5d43aa0);
+            
+    
+            var poly_line_6117bd7411e8543a623de005f20a149a = L.polyline(
+                [[37.4691896, 126.9376976], [37.4691645270942, 126.937998094808]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_6117bd7411e8543a623de005f20a149a.bindTooltip(
+                `<div>
+                     헬스장까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5be11666eab8981565be6f3cddbfe64f = L.marker(
+                [37.46931568796628, 126.9376011877568],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_09fcd1b6e6364e3e18d17c729cfea87d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ed7c6f1b578e427ad5e4665e3fc8534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4d6e69ed46094f42899bfe79429b8b4 = $(`<div id="html_e4d6e69ed46094f42899bfe79429b8b4" style="width: 100.0%; height: 100.0%;">스터디카페: 셀독24스터디카페 신림대학점 (16m)</div>`)[0];
+                popup_1ed7c6f1b578e427ad5e4665e3fc8534.setContent(html_e4d6e69ed46094f42899bfe79429b8b4);
+            
+        
+
+        marker_5be11666eab8981565be6f3cddbfe64f.bindPopup(popup_1ed7c6f1b578e427ad5e4665e3fc8534)
+        ;
+
+        
+    
+    
+                marker_5be11666eab8981565be6f3cddbfe64f.setIcon(icon_09fcd1b6e6364e3e18d17c729cfea87d);
+            
+    
+            var poly_line_2bb0ce70969d17f94e1de618e29247a1 = L.polyline(
+                [[37.4691896, 126.9376976], [37.46931568796628, 126.9376011877568]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_2bb0ce70969d17f94e1de618e29247a1.bindTooltip(
+                `<div>
+                     스터디카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e9057fcbbb52bbeba895bbd6d185661b = L.marker(
+                [37.4691364054172, 126.937636380137],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_b820d9bd5ec489faa2310ef1c1e73ff7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "desktop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91f63401f5f507bd9a5427a146785367 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8539934e60f42382066a47119396145 = $(`<div id="html_f8539934e60f42382066a47119396145" style="width: 100.0%; height: 100.0%;">PC방: 스타PC (8m)</div>`)[0];
+                popup_91f63401f5f507bd9a5427a146785367.setContent(html_f8539934e60f42382066a47119396145);
+            
+        
+
+        marker_e9057fcbbb52bbeba895bbd6d185661b.bindPopup(popup_91f63401f5f507bd9a5427a146785367)
+        ;
+
+        
+    
+    
+                marker_e9057fcbbb52bbeba895bbd6d185661b.setIcon(icon_b820d9bd5ec489faa2310ef1c1e73ff7);
+            
+    
+            var poly_line_e42be1ce267449ac5ef6b0e7ef74890f = L.polyline(
+                [[37.4691896, 126.9376976], [37.4691364054172, 126.937636380137]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_e42be1ce267449ac5ef6b0e7ef74890f.bindTooltip(
+                `<div>
+                     PC방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_340bb2d68d8359f808078f4581dc1653 = L.marker(
+                [37.4691246588569, 126.937573085773],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_7a83632aeeda1b9d02a772fc9bad9674 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "print",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f80548a4a58b35e4aaa016c14fe08ff7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_463cb3306b5076c8cb2672cb67b9e5c1 = $(`<div id="html_463cb3306b5076c8cb2672cb67b9e5c1" style="width: 100.0%; height: 100.0%;">프린트카페: 프린트카페 서울대1호점 (13m)</div>`)[0];
+                popup_f80548a4a58b35e4aaa016c14fe08ff7.setContent(html_463cb3306b5076c8cb2672cb67b9e5c1);
+            
+        
+
+        marker_340bb2d68d8359f808078f4581dc1653.bindPopup(popup_f80548a4a58b35e4aaa016c14fe08ff7)
+        ;
+
+        
+    
+    
+                marker_340bb2d68d8359f808078f4581dc1653.setIcon(icon_7a83632aeeda1b9d02a772fc9bad9674);
+            
+    
+            var poly_line_260e389d92193fb83a2f4462a4d6426d = L.polyline(
+                [[37.4691896, 126.9376976], [37.4691246588569, 126.937573085773]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_260e389d92193fb83a2f4462a4d6426d.bindTooltip(
+                `<div>
+                     프린트카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1baabb2dfd721ba3802dc0d8a4bf5ab = L.marker(
+                [37.4856186, 126.9302094],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var beautify_icon_1a462c50ec63f4e19b52e7c4ccafcf2f = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "green",
+  "textColor": "green",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 2,
+}
+            )
+            marker_a1baabb2dfd721ba3802dc0d8a4bf5ab.setIcon(beautify_icon_1a462c50ec63f4e19b52e7c4ccafcf2f);
+        
+    
+        var popup_763d1b8325b9317a84a6a81ce7567309 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0e2e62367359174f7efeafc7cb24793 = $(`<div id="html_e0e2e62367359174f7efeafc7cb24793" style="width: 100.0%; height: 100.0%;">🏡 추천 위치 2 (총 거리 344m)</div>`)[0];
+                popup_763d1b8325b9317a84a6a81ce7567309.setContent(html_e0e2e62367359174f7efeafc7cb24793);
+            
+        
+
+        marker_a1baabb2dfd721ba3802dc0d8a4bf5ab.bindPopup(popup_763d1b8325b9317a84a6a81ce7567309)
+        ;
+
+        
+    
+    
+                marker_a1baabb2dfd721ba3802dc0d8a4bf5ab.setIcon(beautify_icon_1a462c50ec63f4e19b52e7c4ccafcf2f);
+            
+    
+            var marker_12df26a8c82fbe1f1a0690de1bf52946 = L.marker(
+                [37.48572801418, 126.930327438303],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_a52628ff765502ea5105b389e4d672b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b8eb11f7603eb1f24d05cca2bd3f2b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91d93b98183dbf6de25c488de274bb40 = $(`<div id="html_91d93b98183dbf6de25c488de274bb40" style="width: 100.0%; height: 100.0%;">편의점: 세븐일레븐 관악꿈보람점 (16m)</div>`)[0];
+                popup_8b8eb11f7603eb1f24d05cca2bd3f2b1.setContent(html_91d93b98183dbf6de25c488de274bb40);
+            
+        
+
+        marker_12df26a8c82fbe1f1a0690de1bf52946.bindPopup(popup_8b8eb11f7603eb1f24d05cca2bd3f2b1)
+        ;
+
+        
+    
+    
+                marker_12df26a8c82fbe1f1a0690de1bf52946.setIcon(icon_a52628ff765502ea5105b389e4d672b8);
+            
+    
+            var poly_line_6206d36ad89de47a0317dd40aa6bf8df = L.polyline(
+                [[37.4856186, 126.9302094], [37.48572801418, 126.930327438303]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_6206d36ad89de47a0317dd40aa6bf8df.bindTooltip(
+                `<div>
+                     편의점까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f94585ffc1bd9ae02abd80ffa6359487 = L.marker(
+                [37.4855070433317, 126.929948866547],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_78f448a839fd781da60b2bd555278f7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8323f7950a81eea999749fe750476e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86b234b32492f2f74c09b2e4f775bfd3 = $(`<div id="html_86b234b32492f2f74c09b2e4f775bfd3" style="width: 100.0%; height: 100.0%;">약국: 5층엔약국 (26m)</div>`)[0];
+                popup_b8323f7950a81eea999749fe750476e4.setContent(html_86b234b32492f2f74c09b2e4f775bfd3);
+            
+        
+
+        marker_f94585ffc1bd9ae02abd80ffa6359487.bindPopup(popup_b8323f7950a81eea999749fe750476e4)
+        ;
+
+        
+    
+    
+                marker_f94585ffc1bd9ae02abd80ffa6359487.setIcon(icon_78f448a839fd781da60b2bd555278f7d);
+            
+    
+            var poly_line_eae9bb0e939f040694cf5242d4c5106e = L.polyline(
+                [[37.4856186, 126.9302094], [37.4855070433317, 126.929948866547]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_eae9bb0e939f040694cf5242d4c5106e.bindTooltip(
+                `<div>
+                     약국까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca0738ad32bbf2562448d00241d74af0 = L.marker(
+                [37.485537607142035, 126.92983011682396],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_58b369ec5dd12ae125f03c5749a2e577 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_380ed407b9721fb3bd5051de8adcc4d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7c2d83aa7b9a13365aaeed0aeb54fd9 = $(`<div id="html_d7c2d83aa7b9a13365aaeed0aeb54fd9" style="width: 100.0%; height: 100.0%;">병원: 365밝은안과의원 (35m)</div>`)[0];
+                popup_380ed407b9721fb3bd5051de8adcc4d8.setContent(html_d7c2d83aa7b9a13365aaeed0aeb54fd9);
+            
+        
+
+        marker_ca0738ad32bbf2562448d00241d74af0.bindPopup(popup_380ed407b9721fb3bd5051de8adcc4d8)
+        ;
+
+        
+    
+    
+                marker_ca0738ad32bbf2562448d00241d74af0.setIcon(icon_58b369ec5dd12ae125f03c5749a2e577);
+            
+    
+            var poly_line_b8a6efe71f8e722bc7809853721872e4 = L.polyline(
+                [[37.4856186, 126.9302094], [37.485537607142035, 126.92983011682396]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_b8a6efe71f8e722bc7809853721872e4.bindTooltip(
+                `<div>
+                     병원까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e60e542bde93b448b0a38da72f41bfd = L.marker(
+                [37.4859229479843, 126.930865462749],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_f030bbe51ae2cea632f60471ebdb1c7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e5d5e3f0e65cbc1b2203f529641fadc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e251c53486f3868f15e33caedcf766f = $(`<div id="html_6e251c53486f3868f15e33caedcf766f" style="width: 100.0%; height: 100.0%;">코인빨래방: 화이트365 신림2호점 (67m)</div>`)[0];
+                popup_7e5d5e3f0e65cbc1b2203f529641fadc.setContent(html_6e251c53486f3868f15e33caedcf766f);
+            
+        
+
+        marker_3e60e542bde93b448b0a38da72f41bfd.bindPopup(popup_7e5d5e3f0e65cbc1b2203f529641fadc)
+        ;
+
+        
+    
+    
+                marker_3e60e542bde93b448b0a38da72f41bfd.setIcon(icon_f030bbe51ae2cea632f60471ebdb1c7a);
+            
+    
+            var poly_line_fac82af79f1b73457771d98344cf2cc3 = L.polyline(
+                [[37.4856186, 126.9302094], [37.4859229479843, 126.930865462749]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_fac82af79f1b73457771d98344cf2cc3.bindTooltip(
+                `<div>
+                     코인빨래방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b1f59128aacabd600101c13c045db07f = L.marker(
+                [37.4851603326402, 126.93024881842],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_d366deb42831c348c987d652e0024ec5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e00ac95f525399148b39b56cec1b566 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11447c24a3ebed90c92b674af8ecbaca = $(`<div id="html_11447c24a3ebed90c92b674af8ecbaca" style="width: 100.0%; height: 100.0%;">헬스장: 유앤아이짐 (51m)</div>`)[0];
+                popup_2e00ac95f525399148b39b56cec1b566.setContent(html_11447c24a3ebed90c92b674af8ecbaca);
+            
+        
+
+        marker_b1f59128aacabd600101c13c045db07f.bindPopup(popup_2e00ac95f525399148b39b56cec1b566)
+        ;
+
+        
+    
+    
+                marker_b1f59128aacabd600101c13c045db07f.setIcon(icon_d366deb42831c348c987d652e0024ec5);
+            
+    
+            var poly_line_2dbfed45b1fd1624a443be37037d1bae = L.polyline(
+                [[37.4856186, 126.9302094], [37.4851603326402, 126.93024881842]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_2dbfed45b1fd1624a443be37037d1bae.bindTooltip(
+                `<div>
+                     헬스장까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_70d53dd5c4664157bfa1e3a123712e0d = L.marker(
+                [37.4859845760349, 126.929946159301],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_9967c80c0381196201d5c7978a1017ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fa84fa313e2f68a884e09e66dd46954 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_042854e45cc1e389c08f440292c57d49 = $(`<div id="html_042854e45cc1e389c08f440292c57d49" style="width: 100.0%; height: 100.0%;">스터디카페: 이루리스터디룸 (47m)</div>`)[0];
+                popup_0fa84fa313e2f68a884e09e66dd46954.setContent(html_042854e45cc1e389c08f440292c57d49);
+            
+        
+
+        marker_70d53dd5c4664157bfa1e3a123712e0d.bindPopup(popup_0fa84fa313e2f68a884e09e66dd46954)
+        ;
+
+        
+    
+    
+                marker_70d53dd5c4664157bfa1e3a123712e0d.setIcon(icon_9967c80c0381196201d5c7978a1017ac);
+            
+    
+            var poly_line_4be2c855b51a2cf27789a11e8366f0e3 = L.polyline(
+                [[37.4856186, 126.9302094], [37.4859845760349, 126.929946159301]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_4be2c855b51a2cf27789a11e8366f0e3.bindTooltip(
+                `<div>
+                     스터디카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_997b797b88332525703d053136d69243 = L.marker(
+                [37.48580480202652, 126.93067109431726],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_4d0ba136f3fa6f59e2adc218211cfbb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "desktop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd4e2a7b95f14b3034652091bd44aff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c53594a6b0f3881286e85fac6736be5c = $(`<div id="html_c53594a6b0f3881286e85fac6736be5c" style="width: 100.0%; height: 100.0%;">PC방: 맥스피드PC 신림역점 (46m)</div>`)[0];
+                popup_bd4e2a7b95f14b3034652091bd44aff9.setContent(html_c53594a6b0f3881286e85fac6736be5c);
+            
+        
+
+        marker_997b797b88332525703d053136d69243.bindPopup(popup_bd4e2a7b95f14b3034652091bd44aff9)
+        ;
+
+        
+    
+    
+                marker_997b797b88332525703d053136d69243.setIcon(icon_4d0ba136f3fa6f59e2adc218211cfbb2);
+            
+    
+            var poly_line_0c053d05187acadf6530b437fc8cbbc0 = L.polyline(
+                [[37.4856186, 126.9302094], [37.48580480202652, 126.93067109431726]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_0c053d05187acadf6530b437fc8cbbc0.bindTooltip(
+                `<div>
+                     PC방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11b57f800b0761bf3bcaf2a3c11599cd = L.marker(
+                [37.4851475513163, 126.929966162282],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_838012177702237ca53452e068b8bc35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "print",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f9f079fac2b009eee0715eaa24d6a85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75530d1237f05fa14cd011ee3e92b987 = $(`<div id="html_75530d1237f05fa14cd011ee3e92b987" style="width: 100.0%; height: 100.0%;">프린트카페: 프린트카페 신림역점 (57m)</div>`)[0];
+                popup_5f9f079fac2b009eee0715eaa24d6a85.setContent(html_75530d1237f05fa14cd011ee3e92b987);
+            
+        
+
+        marker_11b57f800b0761bf3bcaf2a3c11599cd.bindPopup(popup_5f9f079fac2b009eee0715eaa24d6a85)
+        ;
+
+        
+    
+    
+                marker_11b57f800b0761bf3bcaf2a3c11599cd.setIcon(icon_838012177702237ca53452e068b8bc35);
+            
+    
+            var poly_line_498fc156f3970628a0a6445895344ebc = L.polyline(
+                [[37.4856186, 126.9302094], [37.4851475513163, 126.929966162282]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_498fc156f3970628a0a6445895344ebc.bindTooltip(
+                `<div>
+                     프린트카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0cc44efc4c7d3f80f0ee712a749af2c = L.marker(
+                [37.4778115, 126.9631407],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var beautify_icon_88b4bc3800f530ae01031f10d5e50d62 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "purple",
+  "textColor": "purple",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 3,
+}
+            )
+            marker_a0cc44efc4c7d3f80f0ee712a749af2c.setIcon(beautify_icon_88b4bc3800f530ae01031f10d5e50d62);
+        
+    
+        var popup_836abd3b4f8ebb245b23e9f0b5a525f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12c382a24ad86f2a6fcd62ea8b76e7a4 = $(`<div id="html_12c382a24ad86f2a6fcd62ea8b76e7a4" style="width: 100.0%; height: 100.0%;">🏡 추천 위치 3 (총 거리 430m)</div>`)[0];
+                popup_836abd3b4f8ebb245b23e9f0b5a525f3.setContent(html_12c382a24ad86f2a6fcd62ea8b76e7a4);
+            
+        
+
+        marker_a0cc44efc4c7d3f80f0ee712a749af2c.bindPopup(popup_836abd3b4f8ebb245b23e9f0b5a525f3)
+        ;
+
+        
+    
+    
+                marker_a0cc44efc4c7d3f80f0ee712a749af2c.setIcon(beautify_icon_88b4bc3800f530ae01031f10d5e50d62);
+            
+    
+            var marker_f6644947bb8cf087c9b5774ddf86dcfe = L.marker(
+                [37.4781813604454, 126.962564655075],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_1ccf76858852ea6f281ad5c72196742a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f61f39de2f84c9364e2262f7d7e096a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_063f85d7776bcacb7ebd20c30fe7468c = $(`<div id="html_063f85d7776bcacb7ebd20c30fe7468c" style="width: 100.0%; height: 100.0%;">편의점: CU 관악낙성점 (65m)</div>`)[0];
+                popup_f61f39de2f84c9364e2262f7d7e096a7.setContent(html_063f85d7776bcacb7ebd20c30fe7468c);
+            
+        
+
+        marker_f6644947bb8cf087c9b5774ddf86dcfe.bindPopup(popup_f61f39de2f84c9364e2262f7d7e096a7)
+        ;
+
+        
+    
+    
+                marker_f6644947bb8cf087c9b5774ddf86dcfe.setIcon(icon_1ccf76858852ea6f281ad5c72196742a);
+            
+    
+            var poly_line_1b52d952357fd7941cd656f24dcfdfcd = L.polyline(
+                [[37.4778115, 126.9631407], [37.4781813604454, 126.962564655075]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_1b52d952357fd7941cd656f24dcfdfcd.bindTooltip(
+                `<div>
+                     편의점까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c51c554aadfa3a22217c750564da68b3 = L.marker(
+                [37.47756709981907, 126.96329077973436],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_6c0cf4c0bc07baa9e50e384256ed6250 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79863b943a4878910a2f3d9cde2e6832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5b149d10ca189455033a487572e48e7 = $(`<div id="html_c5b149d10ca189455033a487572e48e7" style="width: 100.0%; height: 100.0%;">약국: 늘푸른온누리약국 (30m)</div>`)[0];
+                popup_79863b943a4878910a2f3d9cde2e6832.setContent(html_c5b149d10ca189455033a487572e48e7);
+            
+        
+
+        marker_c51c554aadfa3a22217c750564da68b3.bindPopup(popup_79863b943a4878910a2f3d9cde2e6832)
+        ;
+
+        
+    
+    
+                marker_c51c554aadfa3a22217c750564da68b3.setIcon(icon_6c0cf4c0bc07baa9e50e384256ed6250);
+            
+    
+            var poly_line_260d45ff674cd91b92884cf4f386e5bb = L.polyline(
+                [[37.4778115, 126.9631407], [37.47756709981907, 126.96329077973436]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_260d45ff674cd91b92884cf4f386e5bb.bindTooltip(
+                `<div>
+                     약국까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a1960ebf2f69e2c87b2ee6fa817c0e1 = L.marker(
+                [37.47752024557529, 126.96328514986646],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_e030346877fdb391944c4044b095c142 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0abf52551e935264de4df75aa7f8bfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce68dab6e9d58491baf018f371a5643e = $(`<div id="html_ce68dab6e9d58491baf018f371a5643e" style="width: 100.0%; height: 100.0%;">병원: 연세다온치과의원 (35m)</div>`)[0];
+                popup_f0abf52551e935264de4df75aa7f8bfe.setContent(html_ce68dab6e9d58491baf018f371a5643e);
+            
+        
+
+        marker_8a1960ebf2f69e2c87b2ee6fa817c0e1.bindPopup(popup_f0abf52551e935264de4df75aa7f8bfe)
+        ;
+
+        
+    
+    
+                marker_8a1960ebf2f69e2c87b2ee6fa817c0e1.setIcon(icon_e030346877fdb391944c4044b095c142);
+            
+    
+            var poly_line_663ba467c4846a3b6841cf23993a3de3 = L.polyline(
+                [[37.4778115, 126.9631407], [37.47752024557529, 126.96328514986646]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_663ba467c4846a3b6841cf23993a3de3.bindTooltip(
+                `<div>
+                     병원까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ba3b8d8b848609d4b95d9eeeadc02918 = L.marker(
+                [37.4776771910043, 126.963835655649],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_26af93d53552d6a1f6395f35675a8fe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9c0107fe0ac357f6c0210202fd04a16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dabeb53f460054b9cfacdc3435c1e719 = $(`<div id="html_dabeb53f460054b9cfacdc3435c1e719" style="width: 100.0%; height: 100.0%;">코인빨래방: 화이트365 낙성대역점 (63m)</div>`)[0];
+                popup_b9c0107fe0ac357f6c0210202fd04a16.setContent(html_dabeb53f460054b9cfacdc3435c1e719);
+            
+        
+
+        marker_ba3b8d8b848609d4b95d9eeeadc02918.bindPopup(popup_b9c0107fe0ac357f6c0210202fd04a16)
+        ;
+
+        
+    
+    
+                marker_ba3b8d8b848609d4b95d9eeeadc02918.setIcon(icon_26af93d53552d6a1f6395f35675a8fe3);
+            
+    
+            var poly_line_1b8e4b123c567fb7409ab9b908103b77 = L.polyline(
+                [[37.4778115, 126.9631407], [37.4776771910043, 126.963835655649]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_1b8e4b123c567fb7409ab9b908103b77.bindTooltip(
+                `<div>
+                     코인빨래방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff56101aa5166349eb611354ec3b13eb = L.marker(
+                [37.47754992112655, 126.9630997238755],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_e69e48a56070a79e96093d52ccc0c7bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e2792acff1e149104aae658b1495c12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67104918e67ccebccfc1e5f4fbfa1e34 = $(`<div id="html_67104918e67ccebccfc1e5f4fbfa1e34" style="width: 100.0%; height: 100.0%;">헬스장: 모아핏휘트니스 낙성대역점 (29m)</div>`)[0];
+                popup_3e2792acff1e149104aae658b1495c12.setContent(html_67104918e67ccebccfc1e5f4fbfa1e34);
+            
+        
+
+        marker_ff56101aa5166349eb611354ec3b13eb.bindPopup(popup_3e2792acff1e149104aae658b1495c12)
+        ;
+
+        
+    
+    
+                marker_ff56101aa5166349eb611354ec3b13eb.setIcon(icon_e69e48a56070a79e96093d52ccc0c7bc);
+            
+    
+            var poly_line_d9a90f6854b55f8e11155b8e5cdc5443 = L.polyline(
+                [[37.4778115, 126.9631407], [37.47754992112655, 126.9630997238755]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_d9a90f6854b55f8e11155b8e5cdc5443.bindTooltip(
+                `<div>
+                     헬스장까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c74309718a94761c656c8d3601898c71 = L.marker(
+                [37.4774383034962, 126.963445728918],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_feca578b0f7f9f0922350ad7157e108f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54ff0f5c76234198fc7bdf6c6bd6e899 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_024119903a58f47b71f57e160ac41c8e = $(`<div id="html_024119903a58f47b71f57e160ac41c8e" style="width: 100.0%; height: 100.0%;">스터디카페: 미네르바 스터디카페 낙성대역점 (49m)</div>`)[0];
+                popup_54ff0f5c76234198fc7bdf6c6bd6e899.setContent(html_024119903a58f47b71f57e160ac41c8e);
+            
+        
+
+        marker_c74309718a94761c656c8d3601898c71.bindPopup(popup_54ff0f5c76234198fc7bdf6c6bd6e899)
+        ;
+
+        
+    
+    
+                marker_c74309718a94761c656c8d3601898c71.setIcon(icon_feca578b0f7f9f0922350ad7157e108f);
+            
+    
+            var poly_line_d73cf8098bdeb386a9847579f0c8a437 = L.polyline(
+                [[37.4778115, 126.9631407], [37.4774383034962, 126.963445728918]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_d73cf8098bdeb386a9847579f0c8a437.bindTooltip(
+                `<div>
+                     스터디카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2495000de625f616e7e94b3afbab61c7 = L.marker(
+                [37.4772285038867, 126.963886746747],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_48cc41377ee72d85da554d996259b04c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "desktop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e8c50859ec7a4a10487123886194cad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cb4af88bcc7dca2ca4ccd9a9c0fcd44 = $(`<div id="html_1cb4af88bcc7dca2ca4ccd9a9c0fcd44" style="width: 100.0%; height: 100.0%;">PC방: 제로백PC 낙성대역점 (92m)</div>`)[0];
+                popup_0e8c50859ec7a4a10487123886194cad.setContent(html_1cb4af88bcc7dca2ca4ccd9a9c0fcd44);
+            
+        
+
+        marker_2495000de625f616e7e94b3afbab61c7.bindPopup(popup_0e8c50859ec7a4a10487123886194cad)
+        ;
+
+        
+    
+    
+                marker_2495000de625f616e7e94b3afbab61c7.setIcon(icon_48cc41377ee72d85da554d996259b04c);
+            
+    
+            var poly_line_72d7ca23afb32927306848c0f241afc0 = L.polyline(
+                [[37.4778115, 126.9631407], [37.4772285038867, 126.963886746747]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_72d7ca23afb32927306848c0f241afc0.bindTooltip(
+                `<div>
+                     PC방까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_142489a8f0c0e11db8b0a753d2e79a2e = L.marker(
+                [37.4778488366839, 126.962403150545],
+                {
+}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            var icon_e78089aac77a7749b0346ebe3581ca0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "print",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbd929aee65542dae84b01c709cfc44c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a46c5fd03180423fad805d67acb2dddc = $(`<div id="html_a46c5fd03180423fad805d67acb2dddc" style="width: 100.0%; height: 100.0%;">프린트카페: 프린트카페 관악봉천점 (65m)</div>`)[0];
+                popup_cbd929aee65542dae84b01c709cfc44c.setContent(html_a46c5fd03180423fad805d67acb2dddc);
+            
+        
+
+        marker_142489a8f0c0e11db8b0a753d2e79a2e.bindPopup(popup_cbd929aee65542dae84b01c709cfc44c)
+        ;
+
+        
+    
+    
+                marker_142489a8f0c0e11db8b0a753d2e79a2e.setIcon(icon_e78089aac77a7749b0346ebe3581ca0c);
+            
+    
+            var poly_line_e53e83e5b2ae44c774e7c32ae87e8a21 = L.polyline(
+                [[37.4778115, 126.9631407], [37.4778488366839, 126.962403150545]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_629400a757b5341b198f3abfb23070f9);
+        
+    
+            poly_line_e53e83e5b2ae44c774e7c32ae87e8a21.bindTooltip(
+                `<div>
+                     프린트카페까지 직선 연결
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
