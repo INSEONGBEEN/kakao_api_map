@@ -7,7 +7,7 @@
 ---
 
 ## 🔗 Live Demo  
-http://localhost:8888/lab/tree/kakao_map/recommended_locations_map.html
+(https://inseongbeen.github.io/kakao_api_map/recommended_locations_map.html)
 
 ## 📂 GitHub Repository  
 https://github.com/INSEONGBEEN/seoul-residence-score
