@@ -7,7 +7,7 @@
 ---
 
 ## 🔗 Live Demo  
-- [(예: recommended_locations_map.html 파일 링크 or 노션 Embed)](http://localhost:8888/lab/tree/kakao_map/recommended_locations_map.html)
+- (http://localhost:8888/lab/tree/kakao_map/recommended_locations_map.html)
 
 ## 📂 GitHub Repository  
 https://github.com/INSEONGBEEN/seoul-residence-score
